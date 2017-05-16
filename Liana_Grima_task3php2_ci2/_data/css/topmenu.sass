@@ -1,0 +1,116 @@
+#menu
+    background-color: #e6f4f3
+    height: 70px
+    width: 100%
+    display: block
+    position: relative
+    margin: 0 auto
+    position: fixed
+    display: flex
+    top: 0
+    left: 0
+    right: 0
+
+    nav
+        flex: 1
+
+        ul
+            list-style: none
+            padding: 0
+            margin: 0 20px
+            display: flex
+
+            li
+                flex: 1
+
+
+                a
+                    display: block
+                    padding: 25px 0 25px
+                    text-align: center
+                    text-decoration: none
+                    padding-left: 0.5em
+                    padding-right: 0.5em
+                    color: black
+
+                    &.active
+                        background-color: #c4cece
+                    &:focus
+                        outline: none
+
+    a img
+        height: 60px
+
+    #profpic-logout
+        width: 15%
+        height: 40px
+        float: left
+        margin-top: 12px
+        text-align: center
+        display: flex
+        #profpicimg
+            height: 50px
+        #signout
+            margin-top: 1em
+            margin-left: 3em
+            color: black
+
+
+@media only screen and (max-width: 800px)
+    #menu
+        display: none
+        background-color: #e6f4f3
+        height: 70px
+        width: 100%
+        display: block
+        position: relative
+        margin: 0 auto
+        position: fixed
+        display: flex
+        top: 0
+        left: 0
+        right: 0
+
+        nav
+            flex: 1
+
+            ul
+                list-style: none
+                padding: 0
+                margin: 0 20px
+                display: flex
+
+                li
+                    flex: 1
+
+
+                    a
+                        display: block
+                        padding: 25px 0 25px
+                        text-align: center
+                        text-decoration: none
+                        padding-left: 0.5em
+                        padding-right: 0.5em
+                        color: black
+
+                        &.active
+                            background-color: #c4cece
+                        &:focus
+                            outline: none
+
+        a img
+            height: 60px
+
+        #profpic-logout
+            width: 15%
+            height: 40px
+            float: left
+            margin-top: 12px
+            text-align: center
+            display: flex
+            #profpicimg
+                height: 50px
+            #signout
+                margin-top: 1em
+                margin-left: 3em
+                color: black

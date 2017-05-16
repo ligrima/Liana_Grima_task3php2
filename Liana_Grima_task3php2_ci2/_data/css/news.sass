@@ -1,0 +1,365 @@
+#menu4app
+    display: none
+#titlenews
+    margin-top: 70px
+    float: left
+
+    #titlepage-news
+        text-align: left
+        font-size: 36px
+        margin-left: 100px
+        margin-top: 35px
+
+
+    #news-line
+        width: 55%
+        border-color: #e6f4f3
+        border-style: solid
+        margin-top: -40px
+        margin-left: 100px
+
+#news-content
+    #post-a-post
+        width: 69%
+        margin-left: 2em
+        float: left
+        padding: 0.5em
+        input
+            background-color: #e6f4f3
+            border: 2px solid #b1b3b4
+            padding: 0.5em
+            margin-left: 1%
+            width: 90%
+            float: left
+            margin-bottom: 0.5em
+        button
+            text-align: center
+            background-color: #165f6d
+            padding: 7px
+            border: none
+            float: right
+            color: #e6f4f3
+            margin-top: 0.05em
+    #todo-list
+        height: 230px
+        width: 18%
+        float: right
+        margin-right: 1.5em
+        padding-bottom: 200px
+        .news-todo
+            h1
+                font-size: 22px
+                float: left
+                margin-bottom: -6.7em
+
+            a
+                font-size: 22px
+                text-decoration: none
+                margin-top: 0.67em
+                float: right
+                color: #4952a2
+
+            hr
+                width: 100%
+                border-color: #e6f4f3
+                border-style: solid
+
+        #todonews
+            height: 78%
+            margin-left: 0.5em
+            overflow: auto
+            scroll: hidden
+            img
+                width: 3em
+                float: left
+
+            #unit-timenews
+                float: left
+                h1
+                    font-size: 18px
+                    margin-top: -0em
+                p
+                    margin-top: -1em
+
+
+    #posts-posted
+        overflow: auto
+        scroll: hidden
+        width: 70%
+        margin-left: 2em
+        float: left
+        margin-top: 1em
+        height: 22em
+
+        a
+            text-decoration: none
+            float: left
+
+            img
+                width: 3em
+                margin-right: 1em
+
+        #post
+            float: left
+            width: 91%
+            margin-bottom: 2%
+
+            #username
+                font-size: 22px
+            #unit
+                font-size: 22px
+            #postcomment
+                margin-top: 5px
+                margin-left: 1em
+            #likes-comments
+                background-color: rgba(227, 232, 232, 0.3)
+                i
+                    margin-left: 0.5em
+                    margin-top: 0.5em
+                #like
+
+                #date-time
+                    float: right
+                    margin-right: 0.7em
+                    margin-top: 0.5em
+                #comments-line
+                    border-color: #e6f4f3
+                    border-style: solid
+                #postmessage
+                    #input-question
+                        background-color: #e6f4f3
+                        border: 2px solid #b1b3b4
+                        padding: 1%
+                        margin-left: 1%
+                        width: 95.5%
+                        margin-bottom: 0.5em
+
+
+
+
+@media only screen and (max-width: 800px)
+
+    #menu4app
+        display: inline !important
+
+        a
+            color: black
+
+        body *:not(script)
+            display: block
+
+        ul, ol
+            list-style: none
+
+        .flex-space
+            flex: 1
+
+        .side-control
+            display: none
+
+        #app-content
+            padding: 3.55em 0.75em 0.75em
+
+        #app-header
+            background-color: #e6f4f3
+            color: #c4cece
+            left: 0
+            padding: 0.75em
+            position: fixed
+            right: 0
+            z-index: 999
+            .fa
+                font-size: 1.5em
+
+        #toggle-app-sidebar:checked
+            ~ #app-sidebar
+                left: 0
+
+        #app-sidebar
+            background-color: #c4cece
+            bottom: 0
+            color: #e6f4f3
+            left: -100%
+            position: fixed
+            top: 0
+            width: 100%
+            z-index: 1001
+
+            #app-sidebar-header
+                display: flex
+                padding: 0.75em
+
+            .fa
+                font-size: 1.5em
+
+            #app-options
+                li
+                    border-top: 1px solid #e6f4f3
+
+                a
+                    color: #e6f4f3
+                    padding: 0.75em
+                    text-decoration: none
+
+                    &:active
+                        background-color: #c4cece
+
+                    i
+                        margin: 0.1em 0.25em 0 0
+                        tex-align: center
+                        width: 1.75em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #titlenews
+        margin-top: 70px
+        float: left
+
+        #titlepage-news
+            text-align: left
+            font-size: 36px
+            margin-left: 100px
+            margin-top: 35px
+
+
+        #news-line
+            width: 55%
+            border-color: #e6f4f3
+            border-style: solid
+            margin-top: -40px
+            margin-left: 100px
+
+    #news-content
+        #post-a-post
+            width: 69%
+            margin-left: 2em
+            float: left
+            padding: 0.5em
+            input
+                background-color: #e6f4f3
+                border: 2px solid #b1b3b4
+                padding: 0.5em
+                margin-left: 1%
+                width: 90%
+                float: left
+                margin-bottom: 0.5em
+            button
+                text-align: center
+                background-color: #165f6d
+                padding: 7px
+                border: none
+                float: right
+                color: #e6f4f3
+                margin-top: 0.05em
+        #todo-list
+            display: none
+            height: 230px
+            width: 18%
+            float: right
+            margin-right: 1.5em
+            padding-bottom: 200px
+            .news-todo
+                h1
+                    font-size: 22px
+                    float: left
+                    margin-bottom: -6.7em
+
+                a
+                    font-size: 22px
+                    text-decoration: none
+                    margin-top: 0.67em
+                    float: right
+                    color: #4952a2
+
+                hr
+                    width: 100%
+                    border-color: #e6f4f3
+                    border-style: solid
+
+            #todonews
+                height: 78%
+                margin-left: 0.5em
+                overflow: auto
+                scroll: hidden
+                img
+                    width: 3em
+                    float: left
+
+                #unit-timenews
+                    float: left
+                    h1
+                        font-size: 18px
+                        margin-top: -0em
+                    p
+                        margin-top: -1em
+
+
+        #posts-posted
+            overflow: auto
+            scroll: hidden
+            width: 70%
+            margin-left: 2em
+            float: left
+            margin-top: 1em
+            height: 22em
+
+            a
+                text-decoration: none
+                float: left
+
+                img
+                    width: 3em
+                    margin-right: 1em
+
+            #post
+                float: left
+                width: 91%
+                margin-bottom: 2%
+
+                #username
+                    font-size: 22px
+                #unit
+                    font-size: 22px
+                #postcomment
+                    margin-top: 5px
+                    margin-left: 1em
+                #likes-comments
+                    background-color: rgba(227, 232, 232, 0.3)
+                    i
+                        margin-left: 0.5em
+                        margin-top: 0.5em
+                    #like
+
+                    #date-time
+                        float: right
+                        margin-right: 0.7em
+                        margin-top: 0.5em
+                    #comments-line
+                        border-color: #e6f4f3
+                        border-style: solid
+                    #postmessage
+                        #input-question
+                            background-color: #e6f4f3
+                            border: 2px solid #b1b3b4
+                            padding: 1%
+                            margin-left: 1%
+                            width: 95.5%
+                            margin-bottom: 0.5em

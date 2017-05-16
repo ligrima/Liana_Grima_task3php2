@@ -1,0 +1,168 @@
+#web-content {
+    margin-top: 70px;
+}
+
+#web-content #top #titlepage-profile {
+    text-align: left;
+    font-size: 36px;
+    margin-top: 35px;
+    margin-left: 100px;
+}
+
+#web-content #top #register-profile {
+    width: 55%;
+    border-color: #e6f4f3;
+    border-style: solid;
+    margin-left: 100px;
+    margin-top: -40px;
+}
+
+#web-content #top #bio {
+    width: 47%;
+    margin-left: 150px;
+}
+
+#web-content #bottom {
+    display: flex;
+}
+
+#web-content #bottom #user-pic {
+    margin-left: 8%;
+}
+
+#web-content #bottom #user-pic #profpic-img {
+    width: 60%;
+    padding: 65px 50px 45px 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+#web-content #bottom #user-info {
+    width: 40%;
+    margin-left: 10%;
+    height: 80%;
+}
+
+#web-content #bottom #user-info #titlepage-profile {
+    text-align: left;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#web-content #bottom #user-info #titlepage-profile2 {
+    text-align: left;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-right: 50px;
+    float: right;
+}
+
+#web-content #bottom #user-info #profile-line {
+    border-color: #e6f4f3;
+    border-style: solid;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -25px;
+}
+
+#edit-profile-info {
+    margin-top: 22em;
+    margin-right: 3em;
+}
+
+#edit-profile-info button {
+    text-align: center;
+    background-color: #c4cece;
+    border: none;
+    padding: 1em;
+    outline: none;
+}
+
+#edit-profile-info button:hover {
+    background-color: #d5dcdc;
+    padding: 1em;
+}
+
+#edit-profile-info button img {
+    height: 3em;
+}
+
+@media only screen and (max-width: 800px) {
+    #web-content {
+        margin-top: 70px;
+    }
+    #web-content #top #titlepage-profile {
+        text-align: left;
+        font-size: 36px;
+        margin-top: 35px;
+        margin-left: 100px;
+    }
+    #web-content #top #register-profile {
+        width: 55%;
+        border-color: #e6f4f3;
+        border-style: solid;
+        margin-left: 100px;
+        margin-top: -40px;
+    }
+    #web-content #top #bio {
+        width: 47%;
+        margin-left: 100px !important;
+    }
+    #web-content #bottom {
+        display: inline !important;
+    }
+    #web-content #bottom #user-pic {
+        margin-left: 2% !important;
+    }
+    #web-content #bottom #user-pic #profpic-img {
+        width: 70% !important;
+        padding: 65px 50px 45px 50px;
+        background-size: cover;
+        background-position: center;
+    }
+    #web-content #bottom #user-info {
+        width: 85% !important;
+        margin-left: 5% !important;
+        margin-top: 20% !important;
+        height: 80%;
+    }
+    #web-content #bottom #user-info #titlepage-profile {
+        text-align: left;
+        font-size: 21px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    #web-content #bottom #user-info #titlepage-profile2 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: -10px;
+        margin-right: 50px;
+        float: right;
+    }
+    #web-content #bottom #user-info #profile-line {
+        border-color: #e6f4f3;
+        border-style: solid;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: -25px;
+    }
+    #edit-profile-info {
+        margin-top: 2em !important;
+        margin-left: 55% !important;
+    }
+    #edit-profile-info button {
+        text-align: center;
+        background-color: #c4cece;
+        border: none;
+        padding: 1em;
+        outline: none;
+    }
+    #edit-profile-info button:hover {
+        background-color: #d5dcdc;
+        padding: 1em;
+    }
+    #edit-profile-info button img {
+        height: 3em;
+    }
+}

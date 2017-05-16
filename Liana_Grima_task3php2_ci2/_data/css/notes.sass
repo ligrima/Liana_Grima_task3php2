@@ -1,0 +1,383 @@
+html
+    height: 100%
+
+body
+    margin: 0
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+
+
+#site-container
+    display: flex
+    flex-direction: row
+    flex: 1
+
+    #left-container
+        background-color: #c4cece
+        width: 13em
+        border-right: 3px solid #e6f4f3
+        padding-top: 100px
+
+        #subjects
+            font-size: 25px
+            color: #040707
+            margin: 20px
+
+        #subjects-line
+            border: 1px solid #e6f4f3
+            width: 80%
+            margin-top: -20px
+
+        #newsubjectmenu
+            width: 90%
+            margin-left: 10px
+            overflow: auto
+            scroll: hidden
+            height: 78%
+
+            .accordion
+                background-color: rgba(22, 95, 109, 0.1)
+                color: #444
+                cursor: pointer
+                padding: 16px
+                width: 100%
+                text-align: left
+                outline: none
+                font-size: 17px
+                transition: 0.4s
+                border: none
+
+            .accordion.active, .accordion:hover
+                background-color: rgba(22, 95, 109, 0.275)
+
+            .accordion:after
+                content: '\002B'
+                color: #777
+                font-weight: bold
+                float: right
+                margin-left: 5px
+
+            .accordion.active:after
+                content: "\2212"
+
+            .panel
+                max-height: 0
+                overflow: hidden
+                transition: max-height 0.2s ease-out
+                font-size: 16px
+                margin-left: 40px
+                #lesson
+                    background-color: rgba(22, 95, 109, 0.1)
+                    padding: 8px
+                    margin: 0 auto
+                    width: 100%
+
+                #lesson.active, #lesson:hover
+                    background-color: rgba(22, 95, 109, 0.2)
+
+                #lessonhref
+                    text-decoration: none
+                    color: black
+                    padding-top: 8px
+                    padding-bottom: 8px
+                    padding-right: 30px
+                    padding-left: 30px
+
+        #newsubjectdiv
+            position: fixed
+            width: 11em
+            margin-right: 0.5em
+            margin-left: 0.5em
+            #newsubject
+                border: none
+                text-align: center
+                background-color: #165f6d
+                padding: 7px
+                color: #e6f4f3
+                float: left
+            #newsubject:hover
+                box-shadow: 2px 2px 2px #748b8b
+
+
+    #maincontainer
+        margin-top: 100px
+        display: flex
+        width: 80%
+
+
+        #notetaking
+            margin: 10px
+            width: 100%
+            #newnote
+                text-align: center
+                background-color: #165f6d
+                border: none
+                color: #e6f4f3
+                padding: 7px
+            #newnote:hover
+                box-shadow: 2px 2px 2px #748b8b
+
+            #topnotes
+                border: solid #e6f4f3
+                display: flex
+                margin-top: 0.5em
+                margin-bottom: 0.5em
+                height: 2em
+                #newtitle
+                    width: 3%
+                    margin-top: 2px
+
+                #titleplaceholder
+                    margin-top: 3px
+                    border: none
+                    color: #171c1c
+                    margin-left: 3px
+                    background-color: rgba(227, 232, 232, 0.3)
+                    width: 96%
+                    height: 1.7em
+                #titleplaceholder:focus
+                    box-shadow: 2px 2px 2px #d5dcdc
+                    outline: none
+
+
+
+            #text-area
+                background-color: rgba(227, 232, 232, 0.3)
+                border: 3px solid #e6f4f3
+                color: #171c1c
+                resize: none
+                font-size: 16px
+                width: 99%
+                height: 65%
+
+            #text-area:focus
+                box-shadow: 2px 2px 2px #d5dcdc
+                outline: none
+
+
+            #savenote
+                text-align: center
+                background-color: #165f6d
+                padding: 7px
+                border: none
+                color: #e6f4f3
+                margin-top: 1.5em
+                float: right
+                margin-left: 10px
+
+            #savenote:hover
+                box-shadow: 2px 2px 2px #748b8b
+
+            #discardnote
+                text-align: center
+                background-color: #165f6d
+                padding: 7px
+                border: none
+                color: #e6f4f3
+                margin-top: 1.5em
+                float: right
+            #discardnote:hover
+                box-shadow: 2px 2px 2px #748b8b
+
+
+
+#right-container
+    background-color: #c4cece
+    width: 7em
+    border-left: 3px solid #e6f4f3
+
+
+@media only screen and (max-width: 800px)
+
+    html
+        height: 100%
+
+    body
+        margin: 0
+        display: flex
+        flex-direction: column
+        min-height: 100%
+
+
+
+    #site-container
+        display: flex
+        flex-direction: row
+        flex: 1
+
+        #left-container
+            background-color: #c4cece
+            width: 13em
+            border-right: 3px solid #e6f4f3
+            padding-top: 100px
+
+            #subjects
+                font-size: 25px
+                color: #040707
+                margin: 20px
+
+            #subjects-line
+                border: 1px solid #e6f4f3
+                width: 80%
+                margin-top: -20px
+
+            #newsubjectmenu
+                width: 90%
+                margin-left: 10px
+                overflow: auto
+                scroll: hidden
+                height: 78%
+
+                .accordion
+                    background-color: rgba(22, 95, 109, 0.1)
+                    color: #444
+                    cursor: pointer
+                    padding: 16px
+                    width: 100%
+                    text-align: left
+                    outline: none
+                    font-size: 17px
+                    transition: 0.4s
+                    border: none
+
+                .accordion.active, .accordion:hover
+                    background-color: rgba(22, 95, 109, 0.275)
+
+                .accordion:after
+                    content: '\002B'
+                    color: #777
+                    font-weight: bold
+                    float: right
+                    margin-left: 5px
+
+                .accordion.active:after
+                    content: "\2212"
+
+                .panel
+                    max-height: 0
+                    overflow: hidden
+                    transition: max-height 0.2s ease-out
+                    font-size: 16px
+                    margin-left: 40px
+                    #lesson
+                        background-color: rgba(22, 95, 109, 0.1)
+                        padding: 8px
+                        margin: 0 auto
+                        width: 100%
+
+                    #lesson.active, #lesson:hover
+                        background-color: rgba(22, 95, 109, 0.2)
+
+                    #lessonhref
+                        text-decoration: none
+                        color: black
+                        padding-top: 8px
+                        padding-bottom: 8px
+                        padding-right: 30px
+                        padding-left: 30px
+
+            #newsubjectdiv
+                position: fixed
+                width: 11em
+                margin-top: 0.5em !important
+                margin-right: 0.5em
+                margin-left: 0.5em
+                #newsubject
+                    border: none
+                    text-align: center
+                    background-color: #165f6d
+                    padding: 7px
+                    color: #e6f4f3
+                    float: left
+                #newsubject:hover
+                    box-shadow: 2px 2px 2px #748b8b
+
+
+        #maincontainer
+            margin-top: 100px
+            display: flex
+            width: 80%
+
+
+            #notetaking
+                margin: 10px
+                width: 100%
+                #newnote
+                    text-align: center
+                    background-color: #165f6d
+                    border: none
+                    color: #e6f4f3
+                    padding: 7px
+                #newnote:hover
+                    box-shadow: 2px 2px 2px #748b8b
+
+                #topnotes
+                    border: solid #e6f4f3
+                    display: flex
+                    margin-top: 0.5em
+                    margin-bottom: 0.5em
+                    height: 2em
+                    #newtitle
+                        width: 3%
+                        margin-top: 2px
+
+                    #titleplaceholder
+                        margin-top: 3px
+                        border: none
+                        color: #171c1c
+                        margin-left: 3px
+                        background-color: rgba(227, 232, 232, 0.3)
+                        width: 96%
+                        height: 1.7em
+                    #titleplaceholder:focus
+                        box-shadow: 2px 2px 2px #d5dcdc
+                        outline: none
+
+
+
+                #text-area
+                    background-color: rgba(227, 232, 232, 0.3)
+                    border: 3px solid #e6f4f3
+                    color: #171c1c
+                    resize: none
+                    font-size: 16px
+                    width: 95% !important
+                    height: 65%
+
+                #text-area:focus
+                    box-shadow: 2px 2px 2px #d5dcdc
+                    outline: none
+
+
+                #savenote
+                    text-align: center
+                    background-color: #165f6d
+                    padding: 7px
+                    border: none
+                    color: #e6f4f3
+                    margin-top: 3em !important
+                    float: right
+                    margin-left: 10px
+
+                #savenote:hover
+                    box-shadow: 2px 2px 2px #748b8b
+
+                #discardnote
+                    text-align: center
+                    background-color: #165f6d
+                    padding: 7px
+                    border: none
+                    color: #e6f4f3
+                    margin-top: 3em !important
+                    float: right
+                #discardnote:hover
+                    box-shadow: 2px 2px 2px #748b8b
+
+
+
+    #right-container
+        background-color: #c4cece
+        width: 1em !important
+        border-left: 3px solid #e6f4f3

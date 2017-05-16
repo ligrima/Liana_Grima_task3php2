@@ -1,0 +1,329 @@
+#titlelogin
+    margin-top: 70px
+
+    #titlepage-login
+        text-align: center
+        font-size: 36px
+
+#loginboxes
+    display: flex
+    width: 100%
+    height: 15em
+    margin-top: 1em
+    .left-boxes
+        width: 23%
+
+        margin-left: 23%
+        #firstbox
+            border-color: #e6f4f3
+            border-style: solid
+            width: 100%
+        .input-pair
+            position: relative
+
+            #input-email
+                font-size: 15px
+                color: black
+                background-color: #c4cece
+                border: solid 3px #e6f4f3
+                width: 87%
+                height: 20px
+                padding: 3px
+                margin-top: 16px
+                text-align: left
+                display: inline-block
+                margin-left: 4.5%
+            #input-password
+                font-size: 15px
+                color: black
+                background-color: #c4cece
+                border: solid 3px #e6f4f3
+                width: 87%
+                height: 20px
+                padding: 3px
+                margin-top: 16px
+                text-align: left
+                display: inline-block
+                margin-left: 4.5%
+                z-index: 1000
+
+            #forgothref
+                display: block
+                text-decoration: none
+                color: black
+                position: absolute
+                z-index: 1002
+                line-height: 20px
+                top: 22px
+                right: 8%
+
+            #forgothref:hover
+                color: #4952a2
+                text-decoration: underline
+
+
+
+        .button-login
+            button
+                text-align: center
+                background-color: #165f6d
+                border: none
+                color: #e6f4f3
+                width: 90%
+                padding: 0.4em
+                margin-left: 4.5%
+                margin-top: 0.7em
+                margin-bottom: 0.7em
+
+    #noaccount
+
+        font-size: 16px
+        color: #040707
+        border-color: #e6f4f3
+        border-style: solid
+        width: 100%
+        height: 55px
+        margin-top: 16px
+        text-align: center
+        padding-bottom: 2px
+        p
+            text-align: center
+
+            a
+                text-decoration: none
+                color: #4952a2
+
+    #right-box
+        color: #e6f4f3
+        text-align: center
+        height: 150px
+        border-color: #e6f4f3
+        border-style: solid
+        background-color: #c4cece
+        width: 24%
+        text-decoration: none
+        margin-top: 3em
+        margin-left: 6%
+
+        #other-accounts
+            padding-top: 10px
+            font-size: 16px
+            color: #040707
+
+        #button-fb
+            text-align: center
+            width: 9.5em
+            height: 2em
+            background-color: #4d4dff
+            border: none
+            color: white
+            text-decoration: none
+            font-size: 16px
+            padding: 4px
+            margin-top: 1em
+
+            span
+                font-family: proximanovalight
+
+
+        #button-google
+            text-align: center
+            width: 9.5em
+            height: 2em
+            background-color: white
+            color: black
+            text-decoration: none
+            font-size: 16px
+            padding: 4px
+            margin-top: 1em
+            border: none
+            span
+                font-family: proximanovalight
+
+        #noaccount4app
+            display: none
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px)
+    #menu
+        display: none
+    #titlelogin
+        margin-top: 30px !important
+        #wrap
+            position: relative
+            margin-left: 63%
+            #logo4app
+                background: url("../images/logo.png")
+                height: 80px
+                width: 60px
+                background-size: cover
+                background-position: center
+                position: absolute
+                left: -50%
+
+        #titlepage-login
+            text-align: center
+            font-size: 36px
+            margin-top: 90px
+    #loginboxes
+        display: inline !important
+        width: 50% !important
+        height: auto !important
+        margin-top: 0em !important
+        margin-left: 25%
+        .left-boxes
+            width: 100% !important
+            margin-left: 0px !important
+            border-bottom: 2px solid white
+
+            #firstbox
+                border-color: #c4cece !important
+                border-style: solid
+                width: 100%
+            .input-pair
+                position: relative
+                #input-email
+                    font-size: 15px
+                    color: black
+                    background-color: #c4cece
+                    border: solid 3px #e6f4f3
+                    height: 20px
+                    padding: 3px
+                    margin-top: 16px
+                    text-align: center !important
+                    display: inline-block
+                    margin-left: 3% !important
+                #input-password
+                    font-size: 15px
+                    color: black
+                    background-color: #c4cece
+                    border: solid 3px #e6f4f3
+                    height: 20px
+                    padding: 3px
+                    margin-top: 16px
+                    text-align: center !important
+                    display: inline-block
+                    margin-left: 3% !important
+                    z-index: 1000
+
+                #forgothref
+                    display: none !important
+                    text-decoration: none
+                    color: black
+                    position: absolute
+                    z-index: 1002
+                    line-height: 20px
+                    top: 22px
+                    right: 8%
+
+                #forgothref:hover
+                    color: #4952a2
+                    text-decoration: underline
+
+
+
+            .button-login
+                button
+                    text-align: center
+                    background-color: #165f6d
+                    border: none
+                    color: #e6f4f3
+                    width: 90%
+                    padding: 0.4em
+                    margin-left: 3% !important
+                    margin-top: 0.7em
+                    margin-bottom: 0.7em
+
+        #noaccount
+            display: none
+            font-size: 16px
+            color: #040707
+            border-color: #c4cece !important
+            border-style: solid
+            width: 100%
+            height: 55px
+            margin-top: 16px
+
+            p
+                text-align: center
+
+                a
+                    text-decoration: none
+                    color: #4952a2
+
+
+
+
+        #right-box
+            color: #e6f4f3
+            text-align: center
+            height: 150px
+            border-color: #c4cece !important
+            border-style: solid
+            background-color: #c4cece
+            width: 90% !important
+            text-decoration: none
+            margin-top: 0em !important
+            margin-left: 3%!important
+            #other-accounts
+                display: none
+                padding-top: 10px
+                font-size: 16px
+                color: #040707
+
+            #button-fb
+                text-align: center !important
+                width: 100% !important
+                height: 2em
+                background-color: #4d4dff
+                border: none
+                color: white
+                text-decoration: none
+                font-size: 16px
+                padding: 4px !important
+                margin-top: 1em
+                span
+                    font-family: proximanovalight
+                i
+                    width: 10%
+            #button-google
+                text-align: center
+                width: 100% !important
+                height: 2em
+                background-color: white
+                color: black
+                text-decoration: none
+                font-size: 16px
+                padding: 4px !important
+                margin-top: 1em
+                border: none
+                span
+                    font-family: proximanovalight
+                i
+                    width: 10%
+            #noaccount4app
+                display: inline !important
+                font-size: 16px
+                color: #040707
+                border-color: #c4cece !important
+                border-style: solid
+                width: 100%
+                height: 55px
+                margin-top: 0px
+
+                p
+                    text-align: center
+
+                    a
+                        text-decoration: none
+                        color: #4952a2
