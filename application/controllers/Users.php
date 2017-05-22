@@ -83,7 +83,6 @@ class Users extends CI_Controller {
 		} else {
 			echo "The user could not be registered.";
 		}
-
 	}
 
 		# The login form
@@ -97,7 +96,7 @@ class Users extends CI_Controller {
 			'form'		=> array (
 				'email'			=> array (
 					'type'			=> 'email',
-					'name'			=> 'input-email',
+					'x	name'			=> 'input-email',
 					'placeholder'	=> 'me@example.com',
 					'required'		=> TRUE
 				),
@@ -118,6 +117,7 @@ class Users extends CI_Controller {
 
 	# The login process
 	public function do_login () {
+
 
 		# load the form validator
 		$this->load->library ('form_validation');
@@ -164,11 +164,6 @@ class Users extends CI_Controller {
 			return;
 		}
 
-		else {
-			$this->load->view ('struct/loggedinheader');
-			$this->load->view ('news');
-			$this->load->view ('struct/footer');
-		}
 
 		# Get the user information and set it in a session
 		$userdata = $this->users_model->get_userdata ($login_id);
@@ -176,6 +171,7 @@ class Users extends CI_Controller {
 		# We set the userdata, however we need to set an encryption key
 		$this->session->set_userdata ($userdata);
 
+		redirect ('home');
 	}
 
 	#the logout function

@@ -9,8 +9,9 @@ class Home extends CI_Controller {
 		$this->load->view ('struct/loggedoutheader');
 
 		# This command loads a view from the application/views folder
-		$this->load->view('home');
+		$this->load->view ('home');
 
+		
 		$this->load->view ('struct/footer');
 
 	}

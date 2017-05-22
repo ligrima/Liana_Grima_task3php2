@@ -7,42 +7,49 @@
       <div id="loginboxes">
           <div class="left-boxes">
 
-            <?=form_open ('users/do_login'); ?>
-
-                 <?=form_input ($form['email']); ?>
-                 <?=form_input ($form['password']); ?>
-
-                 <?=form_submit (null, 'Login');?>
-
-                 <?=form_close (); ?>
+<div id="login">
 
 
-          <?php if ($_SERVER['REQUEST_METHOD'] === "POST" and $login === FALSE): ?>
-                      <div id="wrong">
-                      <span>Wrong username or password!</span>
-                      </div>
-          <?php endif; ?>
+                <?=form_open ('Users/do_login'); ?>
+
+                   <div id="firstbox">
+                       <div class="input-pair">
+                           <div id="input-email">
+                               <?=form_input ($form['email']); ?>
+                           </div>
+                       </div>
+
+                       <div class="input-pair">
+
+                           <div id="input-password">
+                               <?=form_input ($form['password']); ?>
+                           </div>
+                            <a id="forgothref" href="#">Forgot</a>
+                       </div>
 
 
-                      <div class="button-login">
-                          <button type="submit" id="button-login">
-                              Login
-                          </button>
-                      </div>
+                        <div class="button-login">
+                           <!--<button type="submit" id="button-login">
+                               Login
+                           </button>-->
+                           <?=form_submit (null, 'Login');?>
+                       </div>
 
 
+                   </div>
+              <?=form_close (); ?>
+
+</div>
 
 
-
-
-                  </div>
-              </form>
 
             </div>
               </div>
 
               <div id="noaccount">
-                  <p>Don't have an account? <a href="<?=site_url('users/register')?>">Register</a> </p>
+                  <p>Don't have an account?
+                      <a href="<?=site_url('register')?>">Register</a>
+                  </p>
 
               </div>
           </div>

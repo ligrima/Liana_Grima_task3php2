@@ -13,10 +13,10 @@
         <link type="text/css" rel="stylesheet" href="<?=base_url('css/style.css')?>">
 
         <!-- roboto-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" >
 
         <!-- opensans -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" >
 
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
@@ -30,13 +30,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="news.html">News</a>
+                        <a class="active" href="news.html">News</a>
                     </li>
                     <li>
                         <a href="timetable.html">Timetable</a>
                     </li>
                     <li>
-                        <a class="active" href="calendar.html">Calendar</a>
+                        <a href="calendar.html">Calendar</a>
                     </li>
                     <li>
                         <a href="notes.html" >Notes</a>
@@ -58,5 +58,3 @@
             </div>
 
          </header>
-
-         
