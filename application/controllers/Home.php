@@ -6,12 +6,31 @@ class Home extends CI_Controller {
 	# This is the index page: http://localhost/ci/index.php?home
 	public function index ()
 	{
+		$this->load->helper ('form');
+		
+		$data = array (
+			'form'		=> array (
+				'email'			=> array (
+					'type'			=> 'email',
+					'x	name'			=> 'input-email',
+					'placeholder'	=> 'me@example.com',
+					'required'		=> TRUE
+				),
+				'password'		=> array (
+					'type'			=> 'password',
+					'name'			=> 'input-password',
+					'placeholder'	=> 'password',
+					'required'		=> TRUE
+				)
+			)
+		);
+
 		$this->load->view ('struct/loggedoutheader');
 
 		# This command loads a view from the application/views folder
-		$this->load->view ('home');
+		$this->load->view ('home', $data);
 
-		
+
 		$this->load->view ('struct/footer');
 
 	}

@@ -171,7 +171,7 @@ class Users extends CI_Controller {
 		# We set the userdata, however we need to set an encryption key
 		$this->session->set_userdata ($userdata);
 
-		redirect ('home');
+		redirect ('news');
 	}
 
 	#the logout function
