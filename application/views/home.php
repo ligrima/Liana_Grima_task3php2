@@ -10,7 +10,7 @@
 <div id="login">
 
 
-                <?=form_open ('Users/do_login'); ?>
+                <?=form_open ('users/do_login'); ?>
 
                    <div id="firstbox">
                        <div class="input-pair">

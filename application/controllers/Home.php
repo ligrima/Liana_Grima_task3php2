@@ -7,7 +7,7 @@ class Home extends CI_Controller {
 	public function index ()
 	{
 		$this->load->helper ('form');
-		
+
 		$data = array (
 			'form'		=> array (
 				'email'			=> array (

@@ -4,10 +4,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Users_Model extends CI_Model {
 
     # Register the user
-    public function register ($f_name, $email, $password) {
+    public function register ($full_name, $email, $password) {
 
         $data = array (
-            'user_fname'        => $f_name,
+            'user_fname'    => $full_name,
             'user_email'        => $email,
             'user_password'     => password_hash ($password, CRYPT_BLOWFISH)
         );
@@ -17,7 +17,6 @@ class Users_Model extends CI_Model {
         $id = $this->db->insert_id ();
 
         return ($id > 0) ? $id : FALSE;
-
     }
 
 
@@ -78,7 +77,9 @@ class Users_Model extends CI_Model {
 
         # Give the controller all the data as an array
         return $result->row_array ();
-
     }
+
+
+
 
 }

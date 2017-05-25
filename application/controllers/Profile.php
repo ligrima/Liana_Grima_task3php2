@@ -5,7 +5,7 @@ class Profile extends CI_Controller {
 
 	# This is the index page: http://localhost/ci/index.php?home
     # The news form
-    public function profilepage() {
+    public function index() {
 
         # load the news page
         $this->load->view ('struct/loggedinheader');

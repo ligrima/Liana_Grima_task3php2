@@ -30,22 +30,22 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="active" href="news.html">News</a>
+                        <a class="active" href="news">News</a>
                     </li>
                     <li>
-                        <a href="timetable.html">Timetable</a>
+                        <a href="timetable">Timetable</a>
                     </li>
                     <li>
-                        <a href="calendar.html">Calendar</a>
+                        <a href="calendar">Calendar</a>
                     </li>
                     <li>
-                        <a href="notes.html" >Notes</a>
+                        <a href="notes" >Notes</a>
                     </li>
                     <li>
-                        <a href="contactform.html">Contact Form</a>
+                        <a href="contactform">Contact Form</a>
                     </li>
                     <li>
-                        <a href="profile.html">Profile</a>
+                        <a href="profile">Profile</a>
                     </li>
                 </ul>
             </nav>
