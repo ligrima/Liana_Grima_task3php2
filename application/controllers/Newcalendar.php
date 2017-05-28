@@ -6,7 +6,20 @@ class Newcalendar extends CI_Controller {
 
     function display($year = null, $month = null) {
 
+        if (!$year) {
+            $year = date ('Y');
+        }
+        if (!$month) {
+            $month = date ('m');
+        }
         $this->load->model('Newcalendar_Model');
+
+        if ($day = $this->input->post('day')) {
+            $this->Newcalendar_Model->add_calendar_data(
+                "$year-$month-$day",
+                $this->input->post('data')
+            );
+        }
         $data['calendar'] = $this->Newcalendar_Model->generate($year, $month);
 
         $this->load->view('newcalendar', $data);
