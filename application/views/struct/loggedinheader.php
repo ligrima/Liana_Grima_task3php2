@@ -23,38 +23,44 @@
     </head>
      <body>
          <header id="menu">
-            <a href="news.html">
+            <a href="news">
                 <img src="images/logo.png" id="logopagesimg" alt="logo">
             </a>
 
             <nav>
                 <ul>
                     <li>
-                        <a class="active" href="news">News</a>
+                        <a href="news" <?php if ($this->router->fetch_class () == 'Home') echo ' class="active"' ?>>News</a>
+                        <!--<a class="active" href="news">News</a>-->
                     </li>
                     <li>
-                        <a href="timetable">Timetable</a>
+                        <a href="timetable" <?php if ($this->router->fetch_class () == 'Timetable') echo ' class="active"' ?>>Timetable</a>
+                        <!--<a href="timetable">Timetable</a>-->
                     </li>
                     <li>
-                        <a href="calendar">Calendar</a>
+                        <a href="Newcalendar" <?php if ($this->router->fetch_class () == 'Newcalendar') echo ' class="active"' ?>>Calendar</a>
+                        <!--<a href="calendar">Calendar</a>-->
                     </li>
                     <li>
-                        <a href="notes" >Notes</a>
+                        <a href="notes" <?php if ($this->router->fetch_class () == 'Notes') echo ' class="active"' ?>>Notes</a>
+                        <!--<a href="notes" >Notes</a>-->
                     </li>
                     <li>
-                        <a href="contactform">Contact Form</a>
+                        <a href="contactform" <?php if ($this->router->fetch_class () == 'Contactform') echo ' class="active"' ?>>Contactform</a>
+                        <!--<a href="contactform">Contact Form</a>-->
                     </li>
                     <li>
-                        <a href="profile">Profile</a>
+                        <a href="profile" <?php if ($this->router->fetch_class () == 'Profile') echo ' class="active"' ?>>Profile</a>
+                        <!--<a href="profile">Profile</a>-->
                     </li>
                 </ul>
             </nav>
 
 
             <div id="profpic-logout">
-                <a href="profile.html">
+                <a href="profile">
                     <img src="images/profpic.png" id="profpicimg" alt="profpic"></a>
-                <a href="index.html"> <i class="fa fa-sign-out" id="signout"></i></a>
+                <a href="home"> <i class="fa fa-sign-out" id="signout"></i></a>
             </div>
 
          </header>

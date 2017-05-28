@@ -1,31 +1,3 @@
-<?php
-    include 'functions.php';
-
-    $note_id = $_GET['n'];
-    $note = null;
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $title = $_POST['title'];
-        $content = $_POST['content'];
-        $note_id = $_POST['note_id'];
-
-        if ($note_id == NULL) {
-            $note_id = create_note ($_COOKIE['user_id'], $title);
-        } else {
-            update_note ($_COOKIE['user_id'], $note_id, $title);
-        }
-
-        save_note_to_disk ($note_id, $content);
-
-        redirect ("notes.php?n={$note_id}");
-
-    } else {
-        $note = load_note ($_COOKIE['user_id'], $note_id);
-        $note['content'] = load_note_from_disk ($note_id);
-    }
-?>
-
-
 
 <div id="site-container">
        <aside id="left-container">
@@ -97,14 +69,14 @@
 
 <form action="notes.php" method="post" id="notetaking">
 
-<input id=" "type="text" name="title" value="<?php if ($note != NULL) echo $note['note_title']?>">
+<input id=" "type="text" name="title" value="">
 <br>
-<textarea rows="10" cols="50" name="content"><?php if ($note != NULL) echo $note['content']?></textarea>
+<textarea rows="10" cols="50" name="content"></textarea>
 <br>
 <button type="submit" id="savenote">Save</button>
-<?php if ($note != NULL): ?>
-<input type="hidden" name="note_id" value="<?=$note_id?>">
-<?php endif; ?>
+
+<input type="hidden" name="note_id" value="">
+
 </form>
 </main>
 <aside id="right-container"></aside>
