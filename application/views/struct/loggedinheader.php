@@ -23,34 +23,35 @@
     </head>
      <body>
          <header id="menu">
-            <a href="news">
+            <a href="<?=site_url('news')?>">
                 <img src="images/logo.png" id="logopagesimg" alt="logo">
             </a>
 
             <nav>
                 <ul>
                     <li>
-                        <a href="news" <?php if ($this->router->fetch_class () == 'Home') echo ' class="active"' ?>>News</a>
+
+                        <a href="<?=site_url('news')?>" <?php if ($this->router->fetch_class () == 'Home') echo 'class="active"' ?>>News</a>
                         <!--<a class="active" href="news">News</a>-->
                     </li>
                     <li>
-                        <a href="timetable" <?php if ($this->router->fetch_class () == 'Timetable') echo ' class="active"' ?>>Timetable</a>
+                        <a href="<?=site_url('timetable')?>" <?php if ($this->router->fetch_class () == 'Timetable') echo 'class="active"' ?>>Timetable</a>
                         <!--<a href="timetable">Timetable</a>-->
                     </li>
                     <li>
-                        <a href="Newcalendar" <?php if ($this->router->fetch_class () == 'Newcalendar') echo ' class="active"' ?>>Calendar</a>
+                        <a href="<?=site_url('newcalendar')?>" <?php if ($this->router->fetch_class () == 'Newcalendar') echo 'class="active"' ?>>Calendar</a>
                         <!--<a href="calendar">Calendar</a>-->
                     </li>
                     <li>
-                        <a href="notes" <?php if ($this->router->fetch_class () == 'Notes') echo ' class="active"' ?>>Notes</a>
+                        <a href="<?=site_url('notes')?>" <?php if ($this->router->fetch_class () == 'Notes') echo 'class="active"' ?>>Notes</a>
                         <!--<a href="notes" >Notes</a>-->
                     </li>
                     <li>
-                        <a href="contactform" <?php if ($this->router->fetch_class () == 'Contactform') echo ' class="active"' ?>>Contactform</a>
+                        <a href="<?=site_url('contactform')?>" <?php if ($this->router->fetch_class () == 'Contactform') echo 'class="active"' ?>>Contactform</a>
                         <!--<a href="contactform">Contact Form</a>-->
                     </li>
                     <li>
-                        <a href="profile" <?php if ($this->router->fetch_class () == 'Profile') echo ' class="active"' ?>>Profile</a>
+                        <a href="<?=site_url('profile')?>" <?php if ($this->router->fetch_class () == 'Profile') echo 'class="active"' ?>>Profile</a>
                         <!--<a href="profile">Profile</a>-->
                     </li>
                 </ul>
@@ -58,9 +59,9 @@
 
 
             <div id="profpic-logout">
-                <a href="profile">
+                <a href="<?=site_url('profile')?>">
                     <img src="images/profpic.png" id="profpicimg" alt="profpic"></a>
-                <a href="home"> <i class="fa fa-sign-out" id="signout"></i></a>
+                <a href="<?=site_url('home')?>"> <i class="fa fa-sign-out" id="signout"></i></a>
             </div>
 
          </header>
