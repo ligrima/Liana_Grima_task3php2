@@ -22,6 +22,9 @@ class Newcalendar extends CI_Controller {
         }
         $data['calendar'] = $this->Newcalendar_Model->generate($year, $month);
 
+
+        $this->load->view ('struct/loggedinheader');
         $this->load->view('newcalendar', $data);
+        $this->load->view ('struct/footer');
     }
 }

@@ -18,7 +18,14 @@
         <!-- opensans -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" >
 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+
+
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
 
     </head>
      <body>

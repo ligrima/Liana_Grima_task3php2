@@ -16,7 +16,7 @@
        <div id="todo-list">
            <div class="news-todo">
                <h1>Today</h1>
-               <a href="calendar.php">Calendar</a>
+               <a href="<?=site_url('newcalendar')?>">Calendar</a>
                <hr>
            </div>
            <div id="todonews">
