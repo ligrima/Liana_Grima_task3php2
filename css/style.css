@@ -1764,7 +1764,7 @@ body {
     height: 230px;
     width: 18%;
     float: right;
-    margin-right: 1.5em;
+    margin-right: 5.5em;
     padding-bottom: 200px;
 }
 
@@ -1820,7 +1820,7 @@ body {
     margin-left: 2em;
     float: left;
     margin-top: 1em;
-    height: 22em;
+    height: 35em;
 }
 
 #news-content #posts-posted a {
@@ -2057,7 +2057,7 @@ body {
     #news-content #posts-posted #post {
         float: left;
         width: 91%;
-        margin-bottom: 2%;
+        margin-bottom: 2
     }
     #news-content #posts-posted #post #username {
         font-size: 22px;
@@ -2431,23 +2431,23 @@ body {
 
 
 .calendar {
-          font-family: Arial; font-size: 12px;
-      }
-      table.calendar {
-          margin: auto; border-collapse: collapse;
-      }
-      .calendar .days td {
-          width: 80px; height: 80px; padding: 4px;
-          border: 1px solid #999;
-          vertical-align: top;
-          background-color: #DEF;
-      }
-      .calendar .days td:hover {
-          background-color: #FFF;
-      }
-      .calendar .highlight {
-          font-weight: bold; color: #00F;
-      }
+      font-family: Arial; font-size: 12px;
+  }
+  table.calendar {
+      margin: auto; border-collapse: collapse;
+  }
+  .calendar .days td {
+      width: 80px; height: 80px; padding: 4px;
+      border: 1px solid #999;
+      vertical-align: top;
+      background-color: #DEF;
+  }
+  .calendar .days td:hover {
+      background-color: #FFF;
+  }
+  .calendar .highlight {
+      font-weight: bold; color: #00F;
+  }
 
 html {
     height: 100%;
@@ -2500,4 +2500,31 @@ p {
 :-moz-placeholder {
     color: #6d7072;
     opacity: 1;
+}
+
+
+.calendar {
+      font-family: Arial; font-size: 12px;
+  }
+  table.calendar {
+      margin: auto; border-collapse: collapse;
+  }
+  .calendar .days td {
+      width: 80px; height: 80px; padding: 4px;
+      border: 1px solid #999;
+      vertical-align: top;
+      background-color: #DEF;
+  }
+  .calendar .days td:hover {
+      background-color: #FFF;
+  }
+  .calendar .highlight {
+      font-weight: bold; color: #00F;
+  }
+  html {
+      height: 100%;
+  }
+#user-comment1
+{
+    background-color: grey;
 }

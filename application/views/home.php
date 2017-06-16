@@ -1,87 +1,96 @@
-<div id="titlelogin">
-          <div id="wrap">
-              <div id="logo4app"></div>
-          </div>
-          <p id="titlepage-login">Student Guide</p>
-      </div>
-      <div id="loginboxes">
-          <div class="left-boxes">
-
-<div id="login">
-
-
-                <?=form_open ('users/do_login'); ?>
-
-                   <div id="firstbox">
-                       <div class="input-pair">
-                           <div id="input-email">
-                               <?=form_input ($form['email']); ?>
-                           </div>
-                       </div>
-
-                       <div class="input-pair">
-
-                           <div id="input-password">
-                               <?=form_input ($form['password']); ?>
-                           </div>
-                            <a id="forgothref" href="#">Forgot</a>
-                       </div>
-
-
-                        <div class="button-login">
-                           <!--<button type="submit" id="button-login">
-                               Login
-                           </button>-->
-                           <?=form_submit (null, 'Login');?>
-                       </div>
-
-
-                   </div>
-              <?=form_close (); ?>
-
+<div id="titletimetable">
+    <p id="titlepage-timetable">Timetable</p>
+    <hr id="timetable-line">
 </div>
 
+<div id="timetablediv">
+<table width="80%" align="center" >
+<div id="head_nav">
+    <tr>
+        <th> </th>
+        <th>Lsn 1</th>
+        <th>Lsn 2</th>
+        <th>Lsn 3</th>
+        <th>Lsn 4</th>
+        <th>Lsn 5</th>
+        <th>Lsn 6</th>
+        <th>Lsn 7</th>
+        <th>Lsn 8</th>
+        <th>Lsn 9</th>
+        <th>Lsn 10</th>
+        <th>Lsn 11</th>
+    </tr>
+</div>
+    <tr>
+        <th>Monday</th>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td>PHP</td>
+            <td>PHP</td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
 
-
-            </div>
-              </div>
-
-              <div id="noaccount">
-                  <p>Don't have an account?
-                      <a href="<?=site_url('register')?>">Register</a>
-                  </p>
-
-              </div>
-          </div>
-
-          <div id="right-box">
-              <div id="other-accounts">
-              Want to use other accounts?
-              </div>
-
-              <div id="fbcontainer">
-                  <div class="button-fblogin">
-                      <a href="https://www.facebook.com/">
-                          <button type="submit" id="button-fb">
-                              <span>Continue with </span>
-                              <i class="fa fa-facebook-square fa-lg" aria-hidden="true">
-                              </i>
-                          </button>
-                      </a>
-                  </div>
-              </div>
-
-              <div id="googlecontainer">
-                  <div class="button-googlelogin">
-                      <a href="https://plus.google.com/">
-                          <button type="submit" id="button-google">
-                              <span>Continue with </span>
-                              <i class="fa fa-google-plus-square fa-lg" style="color:black" aria-hidden="true">
-
-                              </i>
-                          </button>
-                      </a>
-                  </div>
-              </div>
-          </div>
-      </div>
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+            <td>UI UX</td>
+            <td>UI UX</td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td>UI UX</td>
+            <td>UI UX</td>
+            <td>PHP</td>
+            <td>PHP</td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td>Mobile App</td>
+            <td>Mobile App</td>
+            <td>Critical Thinking</td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+    </tr>
+    <tr>
+        <th>Thursday</th>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td>Studies and Research</td>
+            <td>Studies and Research</td>
+            <td>Mobile App</td>
+            <td>Mobile App</td>
+            <td title="No Class" class="Holiday"></td>
+    </tr>
+    <tr>
+        <th>Friday</th>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td>Critical Thinking</td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+            <td>Studies and Research</td>
+            <td>Studies and Research</td>
+            <td title="No Class" class="Holiday"></td>
+            <td title="No Class" class="Holiday"></td>
+    </tr>
+</table>
+</div>

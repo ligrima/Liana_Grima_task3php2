@@ -17,13 +17,33 @@ class SC_Controller extends CI_Controller {
     # Builds a standard page
     # This function should only be available to this
     # class and its children
+    protected function build ($page = NULL, $param = NULL) {
+
+      $header = array (
+        'userdata'    => $this->users_model->get_userdata ($this->session->userdata('user_id'))
+      );
+      if ($header['userdata'] == FALSE) {
+          redirect('logout');
+          return;
+      }
+
+      $this->load->view('struct/header-logged-in', $header);
+  		#$this->load->view('struct/sidebar');
+
+      if ($page != NULL) {
+        $this->load->view ($page, $param);
+      }
+
+      $this->load->view('struct/footer');
+    }
 
     # Check if the user is logged in
     protected function check_login ()
     {
-    #if the user is logged in
+
+        #if the user is logged in
 		if ($this->session->userdata ('user_id') != NULL)
-    {
+        {
         # if the user is on the login/register pages
         if ($this->router->class == 'users')
         {

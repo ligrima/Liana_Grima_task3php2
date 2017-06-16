@@ -5,47 +5,39 @@
            <p id="titlepage-register">Sign Up</p>
            <hr id="register-line">
        </div>
+<!-- Below the header code -->
+<div id="web-content">
+  <div id="register">
+          <?=form_open ('users/do_register'); ?>
+            <div class="input-pair">
+                <label>Name </label>
+                <?=form_input ($form['full_name']); ?>
+            </div>
+            <div class="input-pair">
+                <label>Surname </label>
+                <?=form_input ($form['full_surname']); ?>
+            </div>
+            <div class="input-pair">
+                <label>Username</label>
+                <?=form_input ($form['username']); ?>
+            </div>
 
-       <main id="web-content">
+            <div class="input-pair">
+                <label>Password</label>
+                <?=form_input ($form['password']); ?>
+            </div>
+            <div class="input-pair">
+                <label>Email (Used for sign-in)</label>
+                <?=form_input ($form['email']); ?>
+            </div>
 
+      
+                <div class="input-pair">
+                    <div id="buttonform">
+                        <?=form_submit (null, 'Register');?>
+                    </div>
 
-           <div id="register">
-               <?=form_open ('users/do_register'); ?>
-               <div id="top">
-                   <p>Sign Up for Student Guide</p>
-               </div>
+                </div>
 
-
-               <div class="input-pair">
-                   <label for="input-username">First Name:</label>
-                   <div id="input-username">
-                       <?=form_input ($form['full_name']); ?>
-                   </div>
-               </div>
-
-
-               <div class="input-pair">
-                   <label for="input-email">Email Address:</label>
-                   <div id="input-email">
-                       <?=form_input ($form['email']); ?>
-                   </div>
-               </div>
-
-               <div class="input-pair">
-                   <label for="input-password">Password:</label>
-                   <div id="input-password">
-                       <?=form_input ($form['password']); ?>
-                   </div>
-               </div>
-
-                   <div class="input-pair">
-                       <div id="buttonform">
-                           <?=form_submit (null, 'Register');?>
-                       </div>
-
-                   </div>
-
-               <?=form_close (); ?>
-           </div>
-
-       </main>
+      </div>
+</div>

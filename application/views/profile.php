@@ -1,49 +1,52 @@
-
+<script>
+    function myFunction()
+    {
+        document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+    }
+</script>
 
    <main id="web-content">
        <div id="top">
            <p id="titlepage-profile">About Me</p>
            <hr id="register-profile">
 
-           <p id="bio">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           
        </div>
 
-       <div id="bottom">
-           <div id="user-pic">
-               <img id="profpic-img" src="images/profpic.png" alt="profilepicture">
-
-           </div>
-           <div id="user-info">
-               <p id="titlepage-profile">Name &amp; Surname</p>
-               <hr id="profile-line">
-               <p id="titlepage-profile2">Liana Grima</p>
+<div id="bottom">
 
 
-               <p id="titlepage-profile">Mobile</p>
-               <hr id="profile-line">
-               <p id="titlepage-profile2">79798989</p>
+                            <div id="user-pic">
+                                <img src="<?=base_url('images/profpic.png')?>" id="profpic-img" alt="profilepicture">
+                            </div>
 
-               <p id="titlepage-profile">Email</p>
-               <hr id="profile-line">
-               <p id="titlepage-profile2">liana@gmail.com</p>
+                            <div id="user-info">
 
-               <p id="titlepage-profile">Town</p>
-               <hr id="profile-line">
-               <p id="titlepage-profile2">San Gwann</p>
+                                <!-- Request the data of the current user -->
 
-               <p id="titlepage-profile">Position</p>
-               <hr id="profile-line">
-               <p id="titlepage-profile2">Student</p>
-           </div>
-           <div id="edit-profile-info">
-                <button id="edit">
-                   <img id="edit-prof-info" src="images/edit_prof_info.png" alt="edit info">
-               </button>
-           </div>
-       </div>
+                                 <?=form_open ('profile/update_users'); ?>
+                                 <div id="titlepage-profile">Name</div>
+                                 <br/>
+                                       <hr id="profile-line">
+                                <div id="titlepage-profile2"><h4><?=$userdata['user_name']; ?></h4></div>
+
+                                <div id="titlepage-profile">Surname</div>
+                                <br/>
+                                      <hr id="profile-line">
+                               <div id="titlepage-profile2"><h4><?=$userdata['user_surname']; ?></h4></div>
+
+
+                               <div id="titlepage-profile">Email</div>
+                               <br/>
+                                     <hr id="profile-line">
+                              <div id="titlepage-profile2"><h4><?=$userdata['user_email']; ?></h4></div>
 
 
 
+                                    <?=form_close (); ?>
 
+                            <p id="demo" onclick="myFunction()">    <img src="<?=base_url('images/Files-Edit-File-icon.png')?>" width = "20px" height = "20px"></p>
 
-   </main>
+                            </div>
+                            </div>
+    </main>

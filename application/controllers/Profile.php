@@ -1,15 +1,48 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile extends CI_Controller {
+class Profile extends SC_Controller {
 
-	# This is the index page: http://localhost/ci/index.php?home
-    # The news form
-    public function index() {
+	public function index()
+	{
+		$data = array (
+			'form'		=> array (
+				'full_name'		=> array (
+					'type'			=> 'text',
+					'name'			=> 'input-full-name',
+					'placeholder'	=> 'Name',
+					'required'		=> TRUE
+				),
+				'email'			=> array (
+					'type'			=> 'email',
+					'name'			=> 'input-email',
+					'placeholder'	=> 'me@example.com',
+					'required'		=> TRUE
+				)
+			)
+		);
+		# load the registration page
+		$this->build('profile', $data);
+	}
 
-        # load the news page
-        $this->load->view ('struct/loggedinheader');
-        $this->load->view ('profile');
-        $this->load->view ('struct/footer');
-    }
+	public function update_users()
+	{
+		$this->load->library ('form_validation');
+
+		$id = $this->session->userdata('user_id');
+
+		$name = $this->input->post ('user_name');
+		if ($name == '') $name = NULL;
+
+		$surname = $this->input->post ('user_surname');
+		if ($name == '') $name = NULL;
+
+		$email = $this->input->post ('input-email');
+		if ($name == '') $name = NULL;
+
+		$this->users_model->update_users($id, $name, $surname, $email, $phone);
+
+		redirect('profile');
+	}
+
 }

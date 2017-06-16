@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends SC_Controller {
+class Welcome extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,28 +18,8 @@ class Home extends SC_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	 public function index()
+	public function index()
 	{
-			if ($this->session->userdata ("user_id") !=NULL)
-			{
-				$this->page_loggedin();
-			}
-
-			else
-			{
-					$this->page_loggedout();
-			}
-	}
-
-	private function page_loggedin ()
-	{
-		$this->build('home');
-	}
-
-	private function page_loggedout ()
-	{
-		$this->load->view('struct/header');
-		$this->load->view('home');
-		$this->load->view('struct/footer');
+		$this->load->view('welcome_message');
 	}
 }
