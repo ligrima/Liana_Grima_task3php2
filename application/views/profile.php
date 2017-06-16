@@ -1,16 +1,11 @@
-<script>
-    function myFunction()
-    {
-        document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-    }
-</script>
+
 
    <main id="web-content">
        <div id="top">
            <p id="titlepage-profile">About Me</p>
            <hr id="register-profile">
 
-           
+
        </div>
 
 <div id="bottom">
@@ -41,8 +36,13 @@
                                      <hr id="profile-line">
                               <div id="titlepage-profile2"><h4><?=$userdata['user_email']; ?></h4></div>
 
+<br /><br />
 
+<h4>You can change your details below!</h4>
+<?=form_input ($form['surname']);?>
+<?=form_input ($form['email']);?>
 
+<?=form_submit (null, "Change");?>
                                     <?=form_close (); ?>
 
                             <p id="demo" onclick="myFunction()">    <img src="<?=base_url('images/Files-Edit-File-icon.png')?>" width = "20px" height = "20px"></p>

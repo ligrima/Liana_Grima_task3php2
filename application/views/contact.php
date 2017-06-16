@@ -6,25 +6,40 @@
      <div>
          <div>
          </div>
-         <div id="sendto">
-             <p>Send to</p>
-                 <?=form_dropdown('input-recipient', $userlist); ?>
-         </div>
-         <div id="contact-text-box">
 
-             <?=form_open('contact/do_add_messages'); ?>
-             <?=form_input ($form['content']); ?>
-                     <!-- <textarea  rows="10" cols="50" name="content"> </textarea> -->
-                     <br>
-             <?=form_submit (null, 'Send');?>
-             <?=form_close (); ?>
-
-         </div>
      </div>
      <div id="right-side">
          <div id="top-bar">
          </div>
      <h1>Messages</h1>
+
+
+     <div id="sendto">
+         <p>Send to</p>
+             <?=form_dropdown('input-recipient', $userlist); ?>
+     </div>
+     <div id="contact-text-box">
+
+         <?=form_open('contact/do_add_messages'); ?>
+         <?=form_input ($form['content']); ?>
+                 <!-- <textarea  rows="10" cols="50" name="content"> </textarea> -->
+                 <br>
+
+
+
+
+                 <div id="extra">
+                    <input type="file" name="files[]" multiple="">
+
+
+                </div>
+         <?=form_submit (null, 'Send');?>
+         <?=form_close (); ?>
+
+     </div>
+
+
+
      <div id="message">
 
          <?php foreach($messages->result_array() as $post) : ?>
@@ -39,19 +54,7 @@
                  <div id="contact-right">
 
 
-                         <div id="extra">
-                            <input type="file" name="files[]" multiple="">
 
-
-                            <div id="sendmsg">
-                                <?=form_submit (null, 'Send');?>
-                            </div>
-                            <div id="discardmsg">
-                                <?=form_submit (null, 'Discard');?>
-                            </div>
-
-                            <?=form_close (); ?>
-                        </div>
 
 
                 </div>

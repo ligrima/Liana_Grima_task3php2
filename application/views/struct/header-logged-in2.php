@@ -47,7 +47,6 @@
 
 
         <div id="profpic-logout">
-
                     <a href="profile">
                         <img src="<?=base_url('images/profpic.png')?>" id="profpicimg" alt="profpic">
                     </a>

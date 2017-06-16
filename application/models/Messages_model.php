@@ -11,7 +11,7 @@ class Messages_model extends CI_Model
         $data = array
         (
             'msg_content' => $content,
-            # 'msg_date'  => time(),
+        
             'msg_senderID' => $this->session->userdata('user_id'),
             'msg_recepientID' => $recepient
         );

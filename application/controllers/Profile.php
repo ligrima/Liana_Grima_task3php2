@@ -18,6 +18,13 @@ class Profile extends SC_Controller {
 					'name'			=> 'input-email',
 					'placeholder'	=> 'me@example.com',
 					'required'		=> TRUE
+				),
+
+				'surname'			=> array (
+					'type'			=> 'text',
+					'name'			=> 'input-surname',
+					'placeholder'	=> 'Surname',
+					'required'		=> TRUE
 				)
 			)
 		);
@@ -31,10 +38,10 @@ class Profile extends SC_Controller {
 
 		$id = $this->session->userdata('user_id');
 
-		$name = $this->input->post ('user_name');
+		$name = $this->input->post ('input-full-name');
 		if ($name == '') $name = NULL;
 
-		$surname = $this->input->post ('user_surname');
+		$surname = $this->input->post ('input-surname');
 		if ($name == '') $name = NULL;
 
 		$email = $this->input->post ('input-email');

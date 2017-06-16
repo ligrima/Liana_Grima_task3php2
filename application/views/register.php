@@ -31,13 +31,13 @@
                 <?=form_input ($form['email']); ?>
             </div>
 
-      
+
                 <div class="input-pair">
                     <div id="buttonform">
                         <?=form_submit (null, 'Register');?>
                     </div>
 
                 </div>
-
+<?=form_close (); ?>
       </div>
 </div>
