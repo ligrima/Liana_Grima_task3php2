@@ -38,14 +38,15 @@
 
 <br /><br />
 
-<h4>You can change your details below!</h4>
+<h4><img src="<?=base_url('images/edit_prof_info.png')?>" width = "20px" height = "20px"> You can change your details below!</h4>
+<?=form_input ($form['full_name']);?>
 <?=form_input ($form['surname']);?>
 <?=form_input ($form['email']);?>
 
 <?=form_submit (null, "Change");?>
                                     <?=form_close (); ?>
 
-                            <p id="demo" onclick="myFunction()">    <img src="<?=base_url('images/Files-Edit-File-icon.png')?>" width = "20px" height = "20px"></p>
+                    <!--        <p id="demo" onclick="myFunction()">    <img src="<?=base_url('images/edit_prof_info.png')?>" width = "20px" height = "20px"></p>-->
 
                             </div>
                             </div>

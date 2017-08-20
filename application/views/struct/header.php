@@ -6,7 +6,7 @@
     <title>Student Companion</title>
     <link rel="icon" href="<?=base_url('images/logo.png')?>">
     <link type="text/css" rel="stylesheet" href="<?=base_url('css/style.css')?>">
-    <script src="https://use.fontawesome.com/ea811db0f0.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/style.css"><script src="https://use.fontawesome.com/ea811db0f0.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
@@ -15,7 +15,9 @@
 <body>
 
     <header id="menu">
-        <img src="<?=base_url('images/logo.png')?>">
+        <a href="<?=site_url('newsfeed')?>">
+            <img src="<?=base_url('images/logo.png')?>" id="logopagesimg" alt="logo">
+        </a>
     </header>
 
 

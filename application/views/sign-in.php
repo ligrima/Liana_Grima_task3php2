@@ -12,24 +12,23 @@
 
                     <?=form_open ('users/do_signin'); ?>
                         <div id="firstbox">
-                        <div class="input-pair">
-                            <div id="inout-email">
-                              <?=form_input ($form['email']); ?>
+                            <div class="input-pair">
+                                <div id="input-email">
+                                  <?=form_input ($form['email']); ?>
+                                </div>
                             </div>
+
+                            <div class="input-pair">
+                              <div id="input-password">
+                                <?=form_input ($form['password']); ?>
+                              </div>
+                            </div>
+
+                            <div class="button-login">
+                                <button> <?=form_submit (null, 'Log in');?> </button>
+                            </div>
+
                         </div>
-
-                        <div class="input-pair">
-                          <div id="input-password">
-                            <?=form_input ($form['password']); ?>
-                          </div>
-                        </div>
-
-
-                          <div id="button-login">
-                              <?=form_submit (null, 'Login');?>
-                          </div>
-
-                          </div>
                       <?=form_close (); ?>
 
                 </div>
@@ -38,13 +37,13 @@
 
         <div id="noaccount">
         <p>Don't have an account?
-           <a href="<?=site_url('register')?>">Register</a>
+           <a href="<?=site_url('register')?>">Sign up</a>
         </p>
 
         </div>
 
 
-
+<div id="loginboxes">
         <div id="right-box">
           <div id="other-accounts">
           Want to use other accounts?
@@ -75,3 +74,4 @@
               </div>
           </div>
         </div>
+</div>
