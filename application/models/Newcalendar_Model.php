@@ -47,16 +47,16 @@ class Newcalendar_Model extends CI_Model {
         $conf = array(
             'start_day' => 'monday',
             'show_next_prev' => true,
-            'next_prev_url' => base_url(). 'index.php/Newcalendar/index'
+            'next_prev_url' => base_url(). 'Newcalendar/index'
         );
 
         $conf ['template'] ='{table_open}<table border="0" cellpadding="0" cellspacing="0" class="calendar">{/table_open}
 
         {heading_row_start}<tr>{/heading_row_start}
 
-        {heading_previous_cell}<th><a href="{previous_url}">&lt;&lt;</a></th>{/heading_previous_cell}
+        {heading_previous_cell}<th><a href="{previous_url}"><i class="fa fa-arrow-left fa-2x fa-inverse" aria-hidden="true"></i></a></th>{/heading_previous_cell}
         {heading_title_cell}<th colspan="{colspan}">{heading}</th>{/heading_title_cell}
-        {heading_next_cell}<th><a href="{next_url}">&gt;&gt;</a></th>{/heading_next_cell}
+        {heading_next_cell}<th><a href="{next_url}"><i class="fa fa-arrow-right fa-2x fa-inverse" aria-hidden="true"></i></a></th>{/heading_next_cell}
 
         {heading_row_end}</tr>{/heading_row_end}
 

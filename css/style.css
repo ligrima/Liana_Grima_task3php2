@@ -159,11 +159,16 @@
     border-style: solid;
     margin-top: -40px;
     margin-left: 100px;
+    margin-bottom: 15px;
 }
 
 #calendarpage {
     display: flex;
     margin-bottom: 1em;
+    border: 3px solid #e6f4f3;
+    width: 800px;
+    height: 440px;
+    margin-left: 225px;
 }
 
 .calendar {
@@ -177,21 +182,23 @@ table.calendar {
 }
 
 .calendar .days td {
-    width: 80px;
-    height: 80px;
+    width: 95px;
+    height: 65px;
     padding: 4px;
-    border: 1px solid #999;
+    border: 3px solid #e6f4f3;
     vertical-align: top;
-    background-color: #DEF;
+    background-color: #c4cece;
 }
 
  .calendar .days td:hover {
-    background-color: #FFF;
+    background-color: #e6f4f3 ;
 }
 
 .calendar .highlight {
     font-weight: bold;
     color: #00F;
+    height: 65px;
+    background-color: #e6f4f3
 }
 
 

@@ -8,7 +8,7 @@ class Notes extends SC_Controller {
 		 # Inherit the parent class' properties
 		 parent::__construct ();
 
-		 $this->load->model ('notes_model');
+		 $this->load->model('notes_model');
 	 }
 
 	public function index()
