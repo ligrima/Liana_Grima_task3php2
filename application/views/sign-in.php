@@ -13,37 +13,38 @@
                     <?=form_open ('users/do_signin'); ?>
                         <div id="firstbox">
                             <div class="input-pair">
-                                <div id="input-email">
+
                                   <?=form_input ($form['email']); ?>
-                                </div>
+
                             </div>
 
                             <div class="input-pair">
-                              <div id="input-password">
                                 <?=form_input ($form['password']); ?>
-                              </div>
+
                             </div>
 
-                            <div class="button-login">
-                                <button> <?=form_submit (null, 'Log in');?> </button>
+                            <div class="input-pair">
+                                <div id="buttonform">
+                                <?=form_submit (null, 'Log in');?>
+                            </div>
                             </div>
 
                         </div>
                       <?=form_close (); ?>
 
                 </div>
+
+
+
+                    <div id="noaccount">
+                    <p>Don't have an account?
+                       <a href="<?=site_url('register')?>">Sign up</a>
+                    </p>
+
+                    </div>
             </div>
-        </div>
-
-        <div id="noaccount">
-        <p>Don't have an account?
-           <a href="<?=site_url('register')?>">Sign up</a>
-        </p>
-
-        </div>
 
 
-<div id="loginboxes">
         <div id="right-box">
           <div id="other-accounts">
           Want to use other accounts?
