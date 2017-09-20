@@ -22,16 +22,16 @@
               <ul>
 
                   <li>
-                      <a href="Newsfeed" <?php if ($this->router->fetch_class () == 'Newsfeed') echo ' class="active"'?>>Newsfeed</a>
+                     <a href="<?=site_url('Newsfeed')?>" <?php if ($this->router->fetch_class () == 'Newsfeed') echo ' class="active"'?>>Newsfeed</a>
                   </li>
                   <li>
-                      <a href="Home" <?php if ($this->router->fetch_class () == 'Home') echo ' class="active"'?>>Timetable</a>
+                      <a href="<?=site_url('Home')?>" <?php if ($this->router->fetch_class () == 'Home') echo ' class="active"'?>>Timetable</a>
                   </li>
                   <li>
-                        <a  href="Newcalendar" <?php if ($this->router->fetch_class () == 'Newcalendar') echo ' class="active"' ?>>Calendar</a>
+                        <a href="<?=site_url('Newcalendar')?>" <?php if ($this->router->fetch_class () == 'Newcalendar') echo ' class="active"' ?>>Calendar</a>
                   </li>
                   <li>
-                       <a href="Notes" <?php if ($this->router->fetch_class () == 'Notes') echo ' class="active"' ?>>Notes</a>
+                       <a href="<?=site_url('Notes')?>" <?php if ($this->router->fetch_class () == 'Notes') echo ' class="active"' ?>>Notes</a>
                   </li>
 
                   <li>

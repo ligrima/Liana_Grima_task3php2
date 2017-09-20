@@ -1,15 +1,12 @@
 <?php
   class Notes_model extends CI_Model{
-
     public function __construct()
     {
       $this->load->database();
     }
 
-
     public function add_notes($notetitle, $notecontent)
     {
-
       $data = array
       (
         'note_title' => $notetitle,
@@ -19,11 +16,8 @@
       );
 
       $this->db->insert ('tbl_notes', $data);
-
       return $this->db->insert_id ();
-
     }
-
 
     # get the note information and load according to the user
     public function get_notes($id)
@@ -35,5 +29,4 @@
 
         return $result;
     }
-
 }
