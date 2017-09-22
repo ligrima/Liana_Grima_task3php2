@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>Student Companion</title>
+    <title>Student Guide</title>
     <link rel="icon" href="<?=base_url('images/logo.png')?>">
     <link type="text/css" rel="stylesheet" href="<?=base_url('css/style.css')?>">
     <link type="text/css" rel="stylesheet" href="css/style.css"><script src="https://use.fontawesome.com/ea811db0f0.js"></script>

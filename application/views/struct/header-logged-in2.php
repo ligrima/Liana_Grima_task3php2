@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>Student Companion</title>
+    <title>Student Guide</title>
     <link rel="icon" href="<?=base_url('images/logo.png')?>">
     <link type="text/css" rel="stylesheet" href="<?=base_url('css/style.css')?>">
     <link type="text/css" rel="stylesheet" href="css/style.css"><script src="https://use.fontawesome.com/ea811db0f0.js"></script>
@@ -22,21 +22,22 @@
               <ul>
 
                   <li>
-                      <a href="Newsfeed" <?php if ($this->router->fetch_class () == 'Newsfeed') echo ' class="active"'?>>Newsfeed</a>
+                     <a href="<?=site_url('Newsfeed')?>" <?php if ($this->router->fetch_class () == 'Newsfeed') echo ' class="active"'?>>Newsfeed</a>
                   </li>
                   <li>
-                      <a href="Home" <?php if ($this->router->fetch_class () == 'Home') echo ' class="active"'?>>Timetable</a>
+                      <a href="<?=site_url('Home')?>" <?php if ($this->router->fetch_class () == 'Home') echo ' class="active"'?>>Timetable</a>
                   </li>
                   <li>
-                        <a  href="Newcalendar" <?php if ($this->router->fetch_class () == 'Newcalendar') echo ' class="active"' ?>>Calendar</a>
+                        <a href="<?=site_url('Newcalendar')?>" <?php if ($this->router->fetch_class () == 'Newcalendar') echo ' class="active"' ?>>Calendar</a>
                   </li>
                   <li>
-                       <a href="Notes" <?php if ($this->router->fetch_class () == 'Notes') echo ' class="active"' ?>>Notes</a>
+                       <a href="<?=site_url('Notes')?>" <?php if ($this->router->fetch_class () == 'Notes') echo ' class="active"' ?>>Notes</a>
                   </li>
 
                   <li>
                       <a href="<?=site_url('Contact')?>" <?php if ($this->router->fetch_class () == 'Contact') echo ' class="active"' ?>>Contact</a>
                   </li>
+
 
               </ul>
           </nav>

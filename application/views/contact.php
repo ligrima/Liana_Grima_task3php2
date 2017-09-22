@@ -4,11 +4,12 @@
     <div id="contact-page">
         <div id="right-side">
             <div id="top-bar">
+                <h1>Messages</h1>
             </div>
-            <h1>Messages</h1>
+
             <div id="sendto">
-                <p>Send to</p>
-                <?=form_dropdown('input-recipient', $userlist); ?>
+                <p>Send to
+                <?=form_dropdown('input-recipient', $userlist); ?></p>
             </div>
             <div id="contact-text-box">
                 <?=form_open('contact/do_add_messages'); ?>
@@ -18,17 +19,19 @@
                  <div id="extra">
                     <input type="file" name="files[]" multiple="">
                 </div>
-                <?=form_submit (null, 'Send');?>
+                <div id="sendmess">
+                    <?=form_submit (null, 'Send');?>
+                </div>
+
                 <?=form_close (); ?>
             </div>
-            <div id="message">
+            <!-- <div id="inboxmessage">
                 <?php foreach($messages->result_array() as $post) : ?>
                 <h3><?php echo $post['msg_content'];?></h3>
                 <br/><br><br><br>
                 <?php endforeach; ?>
                 <div id="contact-right">
-                </div>
-            </div>
+                </di-->
         </div>
     </div>
 

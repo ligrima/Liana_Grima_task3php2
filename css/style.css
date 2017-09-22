@@ -453,14 +453,14 @@ body {
 }
 
 #site-container #maincontainer {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     width: 80%;
 }
 
 #site-container #maincontainer #notetaking {
     margin: 10px;
-    width: 100%;
+    width: 65em;
 }
 
 #site-container #maincontainer #notetaking #newnote {
@@ -470,66 +470,74 @@ body {
     color: #e6f4f3;
     padding: 7px;
 }
+#site-container #maincontainer #notetaking form {
+    text-align: center;
+    border: none;
+    padding: 7px;
+    width: 80em;
+}
 
 #site-container #maincontainer #notetaking #newnote:hover {
     box-shadow: 2px 2px 2px #748b8b;
 }
 
-#site-container #maincontainer #notetaking #topnotes {
+#site-container #maincontainer #notetaking {
     border: solid #e6f4f3;
     display: flex;
-    margin-top: 0.5em;
     margin-bottom: 0.5em;
-    height: 2em;
+    height: 9em;
 }
 
-#site-container #maincontainer #notetaking #topnotes #newtitle {
-    width: 3%;
+#site-container #maincontainer #notetaking #titleoptions {
+    width: 90%;
     margin-top: 2px;
+    margin-left: 1em;
 }
 
-#site-container #maincontainer #notetaking #topnotes #titleplaceholder {
+#site-container #maincontainer #notetaking #titleoptions input {
     margin-top: 3px;
     border: none;
     color: #171c1c;
     margin-left: 3px;
     background-color: rgba(227, 232, 232, 0.3);
-    width: 96%;
+    width: 90%;
     height: 1.7em;
+    font-size: 14px;
 }
 
-#site-container #maincontainer #notetaking #topnotes #titleplaceholder:focus {
+#site-container #maincontainer #notetaking #titleoptions :focus {
     box-shadow: 2px 2px 2px #d5dcdc;
     outline: none;
 }
 
-#site-container #maincontainer #notetaking #text-area {
+#site-container #maincontainer #notetaking #content input {
     background-color: rgba(227, 232, 232, 0.3);
-    border: 3px solid #e6f4f3;
+    border: 2px solid #e6f4f3;
     color: #171c1c;
     resize: none;
-    font-size: 16px;
-    width: 99%;
-    height: 65%;
+    font-size: 12px;
+    width: 900em;
+    height: 100%;
+    margin-top: 1em;
+    margin-left: 3em;
 }
 
-#site-container #maincontainer #notetaking #text-area:focus {
+#site-container #maincontainer #notetaking  #content :focus {
     box-shadow: 2px 2px 2px #d5dcdc;
     outline: none;
 }
 
-#site-container #maincontainer #notetaking #savenote {
+#site-container #maincontainer #notetaking #savenote input {
     text-align: center;
     background-color: #165f6d;
     padding: 7px;
     border: none;
     color: #e6f4f3;
-    margin-top: 1.5em;
     float: right;
     margin-left: 10px;
 }
 
-#site-container #maincontainer #notetaking #savenote:hover {
+#site-container #maincontainer #notetaking #savenote input:hover {
     box-shadow: 2px 2px 2px #748b8b;
 }
 
@@ -549,7 +557,7 @@ body {
 
 #right-container {
     background-color: #c4cece;
-    width: 7em;
+    width: 2em;
     border-left: 3px solid #e6f4f3;
 }
 
@@ -1463,6 +1471,29 @@ body {
     margin-bottom: 15px;
     margin-left: 100px;
 }
+
+#web-content-contact #contact-page {
+    display: flex;
+    margin-left: 8em;
+}
+
+#web-content-contact #contact-page #right-side #sendto {
+    margin-left: 3em;
+}
+
+
+#web-content-contact #contact-page #right-side #contact-text-box #sendmess input {
+    text-align: center;
+    background-color: #165f6d;
+    padding: 7px;
+    border: none;
+    color: #e6f4f3;
+    float: right;
+    margin-left: 10px;
+}
+
+
+
 
 #web-content-contact #contact-content {
     display: flex;
